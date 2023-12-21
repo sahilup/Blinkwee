@@ -37,6 +37,14 @@ BlinkWee is an open-source project, and contributions are welcome. If you are in
 
 Let's build a vibrant community and make BlinkWee an outstanding social network experience for everyone!
 
+# Images
+![forgot](https://github.com/sahilup/Blinkwee/assets/133857367/90c923ab-8e6e-4bca-90d4-87cc96b580bc)
+![login](https://github.com/sahilup/Blinkwee/assets/133857367/2f9840dd-7e98-4a8d-887e-d82605f7aca0)
+![register](https://github.com/sahilup/Blinkwee/assets/133857367/ca53d463-a8a8-43ee-8312-ba7eea524c7e)
+![edit_profile](https://github.com/sahilup/Blinkwee/assets/133857367/50ab4635-a488-4fda-b8bf-a6ab7522318d)
+![wall](https://github.com/sahilup/Blinkwee/assets/133857367/068d73ba-9b7b-42b4-94c5-e8ec521efb1c)
+
+
 # BlinkWee Database Structure
 
 BlinkWee utilizes a straightforward database structure to store user information and manage account status. Below is the SQL schema for the BlinkWee database:
