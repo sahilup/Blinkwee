@@ -255,7 +255,7 @@ global $user;
                         <div>&nbsp;&nbsp;</div>
                         <div class="d-flex flex-column justify-content-center">
                             <h6 style="margin: 0px;font-size: small;">kiran jain</h6>
-                            <p style="margin:0px;font-size:small" class="text-muted">@kiransharma</p>
+                            <p style="margin:0px;font-size:small" class="text-muted">@kiranjain</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
