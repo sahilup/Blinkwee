@@ -36,3 +36,40 @@ BlinkWee is a dynamic project with exciting future updates planned to enhance us
 BlinkWee is an open-source project, and contributions are welcome. If you are interested in shaping the future of this mini social network, feel free to fork the repository, create issues, or submit pull requests.
 
 Let's build a vibrant community and make BlinkWee an outstanding social network experience for everyone!
+
+# BlinkWee Database Structure
+
+BlinkWee utilizes a straightforward database structure to store user information and manage account status. Below is the SQL schema for the BlinkWee database:
+
+```sql
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    gender INT NOT NULL,
+    email_address VARCHAR(255) UNIQUE NOT NULL,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    profile_pic VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    acc_status INT DEFAULT 0 -- 0 for Inactive, 1 for Active
+);
+
+```
+
+## Table Explanation:
+
+- **id:** Unique identifier for each user, auto-incremented.
+- **first_name:** User's first name.
+- **last_name:** User's last name.
+- **gender:** Represented as an integer. You may choose to assign specific numerical values to different genders (e.g., 0 for Male, 1 for Female, 2 for Other).
+- **email_address:** User's email address, unique for each user.
+- **username:** User's chosen username, unique for each user.
+- **password:** Hashed password for security.
+- **profile_pic:** Path to the user's profile picture.
+- **created_at:** Timestamp indicating when the user account was created.
+- **updated_at:** Timestamp indicating the last update to the user's account.
+- **acc_status:** Account status, represented as an integer. 0 could represent 'Inactive', and 1 could represent 'Active'.
+
+This structure is designed to efficiently store user information and allow for easy expansion as new features are added to the BlinkWee social network. Adjustments and additional tables may be made in future updates to accommodate new functionalities such as posts, likes, comments, and messaging.
